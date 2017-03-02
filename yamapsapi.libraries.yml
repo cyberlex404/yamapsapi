@@ -1,0 +1,17 @@
+yamaps21:
+  remote: https://api-maps.yandex.ru
+  version: 2.1
+  license:
+    name: MIT
+    url: https://api-maps.yandex.ru
+    gpl-compatible: true
+
+  #css:
+  #  theme:
+  #    https://yastatic.net/bootstrap/3.3.4/css/bootstrap.min.css: { type: external, minified: false }
+
+  js:
+    https://api-maps.yandex.ru/2.1/?lang=ru_RU: { type: external, minified: true }
+
+  dependencies:
+      - core/jquery

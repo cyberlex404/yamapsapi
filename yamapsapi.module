@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * @file
+ * Contains yamapsapi.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function yamapsapi_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the yamapsapi module.
+    case 'help.page.yamapsapi':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Yandex Maps API') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function yamapsapi_theme($existing, $type, $theme, $path) {
+  return [
+    'yamaps' => [
+      'variables' => array(
+        'mapid' => 'yamap',
+        'map_type' => 'yandex#map',
+        'map_center' => [0,0],
+        'map_auto_centering' => FALSE, // optionaly, default FALSE
+        'map_auto_zooming' => FALSE, // optionaly, default FALSE
+        'map_objects' => NULL, // GeoJSON, optionaly
+      ),
+      'file' => 'yamapsapi.yamaps.inc',
+    ],
+  ];
+}

@@ -1,0 +1,5 @@
+name: Yandex map API
+type: module
+description: Yandex Maps API
+core: 8.x
+package: Libraries
