@@ -1,14 +1,14 @@
 {
-  "name": "drupal/yamapsapi",
+  "name": "cyberlex404/yamapsapi",
   "type": "drupal-module",
   "description": "Yandex Maps API",
   "keywords": ["Drupal"],
   "license": "GPL-2.0+",
-  "homepage": "https://www.drupal.org/project/yamapsapi",
+  "homepage": "https://github.com/cyberlex404/yamapsapi",
   "minimum-stability": "dev",
   "support": {
-    "issues": "https://www.drupal.org/project/issues/yamapsapi",
-    "source": "http://cgit.drupalcode.org/yamapsapi"
+    "issues": "https://github.com/cyberlex404/yamapsapi/issues",
+    "source": "https://github.com/cyberlex404/yamapsapi"
   },
   "require": { }
 }
