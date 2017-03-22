@@ -1,6 +1,6 @@
 {
   "name": "cyberlex404/yamapsapi",
-  "type": "drupal-module",
+  "type": "drupal-module-custom",
   "description": "Yandex Maps API",
   "keywords": ["Drupal"],
   "license": "GPL-2.0+",
